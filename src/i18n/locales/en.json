@@ -1,0 +1,167 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "programs": "Programs",
+    "impact": "Impact",
+    "whereWeWork": "Where We Work",
+    "partners": "Partners",
+    "transparency": "Transparency",
+    "getInvolved": "Get Involved",
+    "aboutDropdown": {
+      "ourStory": "Our Story",
+      "visionMission": "Vision & Mission",
+      "teamGovernance": "Team & Governance"
+    },
+    "programsDropdown": {
+      "allPrograms": "All Programs",
+      "livelihoods": "Livelihoods",
+      "farmerCollectives": "Farmer Collectives",
+      "womenEmpowerment": "Women Empowerment",
+      "artisanRevival": "Artisan Revival",
+      "skillDevelopment": "Skill Development"
+    }
+  },
+  "hero": {
+    "badge": "MISSION • Engross, Enable, Empower",
+    "headline": {
+      "part1": "Transforming",
+      "families": "165,000+ families",
+      "part2": "through grassroots empowerment"
+    },
+    "subtitle": "Building sustainable livelihoods, strengthening community institutions, and creating lasting change since 2002",
+    "cta": "Explore Our Impact",
+    "ctaSecondary": "Get Involved",
+    "scroll": "Scroll to explore"
+  },
+  "impact": {
+    "badge": "OUR IMPACT",
+    "heading": "22 Years of Transforming Lives",
+    "description1": "Over two decades of dedicated service, we've worked tirelessly to create sustainable impact across rural communities. Our holistic approach addresses the root causes of poverty and inequality through education, health, livelihood, and empowerment initiatives.",
+    "description2": "The statistics below represent real lives changed, communities strengthened, and hope restored. Each number tells a story of transformation and progress towards a more equitable future.",
+    "cta": "Learn About Our Programs",
+    "stats": {
+      "families": "Families Empowered",
+      "years": "Years of Service",
+      "shgs": "Women SHGs",
+      "funds": "Community Funds",
+      "districts": "Districts Covered"
+    }
+  },
+  "programs": {
+    "heading": "Our Programs & Initiatives",
+    "subheading": "Creating lasting impact through community-led development",
+    "livelihood": {
+      "title": "Livelihood Programs",
+      "description": "Provides nutritious food, wholesome food, funds, and educational training to people."
+    },
+    "women": {
+      "title": "Women Empowerment",
+      "description": "Building financial independence through Self-Help Groups and skill development."
+    },
+    "education": {
+      "title": "Education Initiatives",
+      "description": "Creating access to quality education and learning opportunities for children."
+    },
+    "health": {
+      "title": "Health & Nutrition",
+      "description": "Ensuring food security and healthcare access for rural communities."
+    },
+    "learnMore": "Learn More",
+    "exploreMore": "EXPLORE MORE"
+  },
+  "initiatives": {
+    "badge": "Innovation",
+    "heading": "Innovation at the Grassroots",
+    "shopOnWheel": {
+      "title": "Shop on Wheel",
+      "description": "A mobile marketplace bringing SHG and artisan products directly to weekly haats, trade fairs, and urban markets across Odisha."
+    },
+    "janjati": {
+      "title": "Janjati Atmanirbhar Kendra",
+      "description": "A dedicated tribal empowerment center providing culturally-rooted skill training and enterprise support. 700+ tribal individuals trained."
+    },
+    "odra": {
+      "title": "Odra Desh Marketing Company",
+      "description": "A joint venture marketing company co-owned by two FPOs, aggregating rural products for bulk sales, branding, and e-commerce distribution."
+    }
+  },
+  "map": {
+    "badge": "OUR REACH",
+    "heading": "Our Operational Districts",
+    "description": "Working across 18 districts in Odisha with varying intensity of programs and community engagement",
+    "legend": {
+      "high": "High Concentration",
+      "medium": "Medium Concentration",
+      "active": "Active Operations"
+    },
+    "sidebar": {
+      "families": "Families Reached",
+      "programs": "Active Programs",
+      "blocks": "Blocks Covered",
+      "areas": "Focus Areas",
+      "noSelection": "Click on any marker on the map",
+      "instruction": "to view detailed information"
+    },
+    "stats": {
+      "districts": "Districts",
+      "families": "Families",
+      "years": "Years",
+      "programs": "Programs"
+    }
+  },
+  "partners": {
+    "badge": "Collaboration",
+    "heading": "Our Partners in Change",
+    "viewAll": "View All Partners",
+    "stats": {
+      "government": "Government Departments",
+      "foundation": "Foundation & Multilateral Partners",
+      "corporate": "Corporate Partners"
+    }
+  },
+  "cta": {
+    "heading": "Be Part of Rural Transformation",
+    "description": "Whether you're a development professional, CSR partner, or passionate volunteer, there's a place for you in our mission.",
+    "options": {
+      "volunteer": {
+        "title": "Volunteer",
+        "description": "Contribute your time and skills to grassroots development"
+      },
+      "partner": {
+        "title": "Partner",
+        "description": "Collaborate on impactful CSR and development programs"
+      },
+      "donate": {
+        "title": "Donate",
+        "description": "Support sustainable livelihoods and community empowerment"
+      }
+    },
+    "cta": "Get Involved Today"
+  },
+  "footer": {
+    "about": "A grassroots development organization transforming rural lives in Odisha since 2002.",
+    "tagline": "Engross, Enable, Empower",
+    "quickLinks": "Quick Links",
+    "links": {
+      "about": "About Us",
+      "programs": "Programs",
+      "impact": "Our Impact",
+      "partners": "Partners",
+      "contact": "Contact"
+    },
+    "contact": "Contact",
+    "registeredOffice": "Registered Office:",
+    "registeredAddress": "Town Planning Colony, Dhenkanal-759013, Odisha",
+    "stateOffice": "State Office:",
+    "stateAddress": "Gajapati Nagar, Bhubaneswar-751005, Odisha",
+    "legal": {
+      "heading": "Legal",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Use",
+      "reports": "Annual Reports"
+    },
+    "copyright": "© 2024 MISSION. All rights reserved.",
+    "builtWith": "Built with care for rural transformation"
+  }
+}

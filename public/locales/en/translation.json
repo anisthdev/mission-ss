@@ -1,0 +1,33 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "aboutStory": "Our Story",
+    "aboutVision": "Vision & Mission",
+    "aboutTeam": "Team & Governance",
+    "programs": "Programs",
+    "impact": "Impact",
+    "whereWeWork": "Where We Work",
+    "partners": "Partners",
+    "transparency": "Transparency",
+    "getInvolved": "Get Involved"
+  },
+  "hero": {
+    "tagline": "Engross, Enable, Empower",
+    "headline": "Transforming Rural Odisha Since 2002",
+    "subtext": "Empowering 165,000+ families through sustainable livelihoods, grassroots institutions, and community-led development.",
+    "ctaPrimary": "Explore Our Impact",
+    "ctaSecondary": "Get Involved"
+  },
+  "footer": {
+    "about": "A grassroots development organization transforming rural lives in Odisha since 2002.",
+    "quickLinks": "Quick Links",
+    "contact": "Contact",
+    "legal": "Legal",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfUse": "Terms of Use",
+    "annualReports": "Annual Reports",
+    "copyright": "© 2024 MISSION. All rights reserved.",
+    "nitiId": "NITI Aayog UID: OR/2010/0024894"
+  }
+}
