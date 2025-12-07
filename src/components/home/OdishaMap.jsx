@@ -8,23 +8,10 @@ import { X } from 'lucide-react';
 
 export default function OdishaMap() {
   const { t } = useTranslation();
-  const [apiKey, setApiKey] = useState('');
   const [selectedDistrict, setSelectedDistrict] = useState(null);
   const [hoveredMarker, setHoveredMarker] = useState(null);
 
-  // Load API key from file
-  useEffect(() => {
-    const loadApiKey = async () => {
-      try {
-        const response = await fetch('/google_map_key.txt');
-        const text = await response.text();
-        setApiKey(text.trim());
-      } catch (error) {
-        console.error('Error loading API key:', error);
-      }
-    };
-    loadApiKey();
-  }, []);
+  const apiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
 
   const operationalDistricts = odishaDistricts.filter(d => d.isOperational && d.lat && d.lng);
 
@@ -65,16 +52,6 @@ export default function OdishaMap() {
     if (hoveredMarker?.id === district.id) return district.color.replace('#', '');
     return district.color.replace('#', '');
   };
-
-  if (!apiKey) {
-    return (
-      <section className="py-20 bg-white dark:bg-[rgb(var(--dark-bg-primary))]">
-        <div className="container mx-auto px-4 text-center">
-          <p className="text-gray-600 dark:text-gray-400">Loading map...</p>
-        </div>
-      </section>
-    );
-  }
 
   return (
     <section className="py-20 bg-white dark:bg-[rgb(var(--dark-bg-primary))] relative overflow-hidden">
