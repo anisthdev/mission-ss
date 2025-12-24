@@ -1,17 +1,17 @@
-# MISSION NGO Website Implementation Specification
+# Hope Foundation Website Implementation Specification
 
 ## Project Overview
 
-Build a modern, visually distinctive website for MISSION NGO - a grassroots development organization working in rural Odisha, India since 2002. The website should showcase their impact, programs, and attract volunteers/partners.
+Build a modern, visually distinctive website for Hope Foundation - a grassroots development organization working in Mumbai and Maharashtra, India since 2002. The website should showcase their impact, programs, and attract volunteers/partners.
 
 **Tech Stack:**
 - React 18+ with Vite
 - Tailwind CSS
 - Framer Motion for animations
 - React Router for navigation
-- i18next for internationalization (English, Hindi, Odia)
+- i18next for internationalization (English, Hindi, Marathi)
 - Recharts or Visx for data visualization
-- React Simple Maps for Odisha map
+- React Simple Maps for Maharashtra map
 - React Countup for animated numbers
 
 ---
@@ -286,16 +286,16 @@ Build a modern, visually distinctive website for MISSION NGO - a grassroots deve
 Implement full support for three languages:
 - English (en) - Default
 - Hindi (hi)
-- Odia (or)
+- Marathi (mr)
 
 **Language switcher:** Place in header, use native script names:
 - English
 - हिन्दी
-- ଓଡ଼ିଆ
+- मराठी
 
 Store preference in localStorage. All static content should be translatable.
 
-For this implementation, provide English content. Mark all text strings for translation with i18next `t()` function. Create placeholder JSON files for Hindi and Odia that mirror the English structure.
+For this implementation, provide English content. Mark all text strings for translation with i18next `t()` function. Create placeholder JSON files for Hindi and Marathi that mirror the English structure.
 
 ---
 
@@ -303,7 +303,7 @@ For this implementation, provide English content. Mark all text strings for tran
 
 ### 1. Header/Navigation
 
-**Logo:** "MISSION" with globe icon (replicate their existing logo style)
+**Logo:** "Hope Foundation" with globe icon (replicate their existing logo style)
 
 **Navigation Items:**
 - Home
@@ -335,7 +335,7 @@ For this implementation, provide English content. Mark all text strings for tran
 
 **Content:**
 - Tagline: "Engross, Enable, Empower"
-- Headline: "Transforming Rural Odisha Since 2002"
+- Headline: "Transforming Mumbai & Maharashtra Since 2002"
 - Subtext: "Empowering 165,000+ families through sustainable livelihoods, grassroots institutions, and community-led development."
 - Primary CTA: "Explore Our Impact"
 - Secondary CTA: "Get Involved"

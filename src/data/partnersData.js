@@ -1,7 +1,7 @@
 export const partnersData = {
   government: [
     'Government of India',
-    'Government of Odisha',
+    'Government of Maharashtra',
     'Reserve Bank of India',
     'Ministry of MSME',
     'Ministry of Textiles - Development Commissioner (Handicrafts)',
@@ -13,18 +13,18 @@ export const partnersData = {
   ],
 
   stateAgencies: [
-    'State Urban Development Agency (SUDA), Odisha',
-    'Odisha Computer Application Centre (OCAC)',
-    'State Institute for Rural Development & Panchayati Raj (SIRD&PR)',
-    'Odisha Knowledge Corporation Limited (OKCL)',
-    'Odisha Forest Development Corporation',
+    'Mumbai Metropolitan Region Development Authority (MMRDA)',
+    'Maharashtra State Innovation Society (MSInS)',
+    'Mumbai Urban Development Department',
+    'Maharashtra Knowledge Corporation Limited (MKCL)',
+    'Maharashtra State Skill Development Society',
     'State Council for Technical Education & Vocational Training (SCTE&VT)',
   ],
 
   nationalPrograms: [
     'National Health Mission',
-    'Jaga Mission',
-    'Odisha Livelihood Mission',
+    'National Urban Livelihoods Mission',
+    'Mumbai Livelihood Mission',
   ],
 
   industry: [

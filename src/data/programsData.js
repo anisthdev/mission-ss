@@ -5,14 +5,14 @@ export const programsOverview = [
     id: 'livelihoods',
     title: 'Livelihood & Enterprise',
     icon: 'Sprout',
-    brief: 'Empowering rural entrepreneurs through training, credit linkages, and market access in agriculture, livestock, and MSMEs.',
+    brief: 'Empowering urban entrepreneurs through training, credit linkages, and market access in urban farming, services, and MSMEs.',
     slug: 'livelihoods'
   },
   {
     id: 'fpo',
-    title: 'Farmer Collectives',
+    title: 'Urban Farmer Collectives',
     icon: 'Users',
-    brief: 'Building Farmer Producer Organizations that give smallholders collective bargaining power and better market prices.',
+    brief: 'Building Urban Farmer Collectives that give small-scale farmers collective bargaining power and better market access.',
     slug: 'farmer-collectives'
   },
   {
@@ -33,7 +33,7 @@ export const programsOverview = [
     id: 'skill',
     title: 'Skill Development',
     icon: 'GraduationCap',
-    brief: 'Equipping rural youth and women with market-relevant skills for employment and entrepreneurship.',
+    brief: 'Equipping urban youth and women with market-relevant skills for employment and entrepreneurship.',
     slug: 'skill-development'
   },
   {
@@ -48,10 +48,10 @@ export const programsOverview = [
 export const programsDetailed = {
   livelihoods: {
     title: 'Building Sustainable Livelihoods',
-    tagline: 'Empowering rural communities through agriculture, livestock, and micro-enterprise development',
+    tagline: 'Empowering urban communities through sustainable enterprises and micro-business development',
     image: placeholders.farming,
-    challenge: "Rural families in Odisha often depend on single, vulnerable income sources. Limited access to training, credit, and markets keeps them trapped in subsistence economies.",
-    approach: "We provide end-to-end support: from skill training and business planning to credit linkages and market access. Our interventions span agriculture, livestock (backyard poultry, goatery, fishery), and micro-enterprises.",
+    challenge: "Urban families in Mumbai often depend on single, vulnerable income sources. Limited access to training, credit, and markets keeps them from economic advancement.",
+    approach: "We provide end-to-end support: from skill training and business planning to credit linkages and market access. Our interventions span urban farming, services, food processing, and micro-enterprises.",
     programs: [
       {
         name: 'LEDP (Livelihood Enterprise Development Program)',
@@ -60,12 +60,12 @@ export const programsDetailed = {
       },
       {
         name: 'EDP (Entrepreneurship Development Program)',
-        description: '360 rural entrepreneurs trained (manufacturing, service sector, food processing). 115 customized business development plans created. 360 EIN registrations, 120 UDYAM registrations facilitated. Credit linkages with financial institutions.',
+        description: '360 urban entrepreneurs trained (manufacturing, service sector, food processing). 115 customized business development plans created. 360 EIN registrations, 120 UDYAM registrations facilitated. Credit linkages with financial institutions.',
         image: placeholders.market,
       },
       {
         name: 'Micro-Enterprise Support',
-        description: 'Backyard poultry, goatery, fishery, mushroom farming, beekeeping, tailoring, bamboo craft, mop making.',
+        description: 'Urban farming, food processing, catering services, tailoring, handicrafts, home-based businesses.',
         image: placeholders.artisan,
       },
     ],
@@ -79,32 +79,32 @@ export const programsDetailed = {
 
   'farmer-collectives': {
     title: 'Strength in Numbers',
-    tagline: 'Organizing smallholder farmers into collectives for better bargaining power and market access',
+    tagline: 'Organizing urban farmers into collectives for better bargaining power and market access',
     image: placeholders.farming,
-    challenge: "Small and marginal farmers face exploitation by middlemen, lack access to quality inputs, and have no collective voice in markets.",
-    approach: "We promote and strengthen Farmer Producer Organizations (FPOs) that aggregate farmers for collective input procurement, technical services, processing, and marketing.",
+    challenge: "Small-scale urban farmers face exploitation by middlemen, lack access to quality inputs, and have no collective voice in markets.",
+    approach: "We promote and strengthen Urban Farmer Collectives that aggregate farmers for collective input procurement, technical services, processing, and marketing.",
     programs: [
       {
-        name: 'FPO-CSS (Central Sector Scheme)',
-        description: '2 FPOs formed and strengthened with 1,800 farmer members. 30+ Board of Directors and CEOs trained. Exposure visits to leading agri-value chain institutions.',
+        name: 'Urban Farming Initiative',
+        description: '2 Urban Farmer Collectives formed and strengthened with 1,800 farmer members. 30+ Board members and leaders trained. Exposure visits to leading agri-value chain institutions.',
         image: placeholders.farming,
       },
       {
-        name: 'OFPO Bamboo Cluster',
-        description: '1 Bamboo-based OFPO initiated under NABARD with 318 members. Capacity building and product profiling. 100% target achievement.',
+        name: 'Artisan Collective',
+        description: '1 Artisan Collective initiated with 318 members. Capacity building and product profiling. 100% target achievement.',
         image: placeholders.craftwork,
       },
       {
-        name: 'Odra Desh Marketing Company',
-        description: 'Joint venture co-owned by 2 registered FPOs. Equity-based participation. Unified branding and packaging. E-commerce and institutional buyer linkages. 2,500+ farmers reached with better prices.',
+        name: 'Mumbai Collective Marketing Company',
+        description: 'Joint venture co-owned by 2 registered collectives. Equity-based participation. Unified branding and packaging. E-commerce and institutional buyer linkages. 2,500+ members reached with better prices.',
         image: placeholders.market,
       },
     ],
     impact: [
-      { value: 1800, suffix: '+', label: 'Farmers in FPO network' },
+      { value: 1800, suffix: '+', label: 'Members in collective network' },
       { value: '₹80 Lakhs', label: 'Turnover achieved within 2 years' },
-      { value: 1000, suffix: '+', label: 'Farmers with collective input procurement' },
-      { value: 100, suffix: '%', label: 'FPO target achievement in FY 2024-25' },
+      { value: 1000, suffix: '+', label: 'Members with collective input procurement' },
+      { value: 100, suffix: '%', label: 'Collective target achievement in FY 2024-25' },
     ],
   },
 
@@ -112,7 +112,7 @@ export const programsDetailed = {
     title: 'Women as Agents of Change',
     tagline: 'Building a network of empowered women driving community transformation',
     image: placeholders.women,
-    challenge: "Women in rural Odisha often lack financial independence, access to credit, and platforms for collective action.",
+    challenge: "Women in Mumbai often lack financial independence, access to credit, and platforms for collective action.",
     approach: "We form, strengthen, and federate Women Self-Help Groups (WSHGs), providing them with financial literacy, credit linkages, enterprise training, and leadership development.",
     programs: [
       {
@@ -159,7 +159,7 @@ export const programsDetailed = {
       },
       {
         name: 'Cluster Development',
-        description: 'Mushroom and watermelon clusters (agriculture). Bamboo crafts, bell metal, Dokhra crafts, paddy straw crafts (handicrafts). Product profiling and quality standardization.',
+        description: 'Food processing and catering clusters. Handicrafts, textile work, jewelry making, home decor items. Product profiling and quality standardization.',
         image: placeholders.market,
       },
     ],
@@ -173,24 +173,24 @@ export const programsDetailed = {
 
   'skill-development': {
     title: 'Skills for Self-Reliance',
-    tagline: 'Equipping rural youth and women with market-relevant skills for employment and entrepreneurship',
+    tagline: 'Equipping urban youth and women with market-relevant skills for employment and entrepreneurship',
     image: placeholders.training,
-    challenge: "Rural youth lack access to quality vocational training aligned with market demands, leading to unemployment and migration.",
-    approach: "We provide short-term vocational courses, entrepreneurship training, and placement support, with special focus on women and SC/ST communities.",
+    challenge: "Urban youth lack access to quality vocational training aligned with market demands, leading to unemployment.",
+    approach: "We provide short-term vocational courses, entrepreneurship training, and placement support, with special focus on women and marginalized communities.",
     programs: [
       {
         name: 'Entrepreneurship Promotion through Skill Development',
-        description: '50+ women trained in food processing and cosmetology. MSME and cooperative linkages for self-employment. 4 Entrepreneurship Awareness campaigns in Dhenkanal and Angul.',
+        description: '50+ women trained in food processing and cosmetology. MSME and cooperative linkages for self-employment. 4 Entrepreneurship Awareness campaigns in Mumbai zones.',
         image: placeholders.women,
       },
       {
         name: 'Vocational Training',
-        description: 'Tailoring, bamboo articles, construction work, food processing units, digital literacy programs.',
+        description: 'Tailoring, hospitality services, food processing units, digital literacy programs, customer service.',
         image: placeholders.training,
       },
       {
         name: 'Placement Support',
-        description: "Linkages with companies: Domino's, Colour Plus, Raymond, TVS Motors, Sri Laxmi Textiles.",
+        description: "Linkages with companies: Domino's, Colour Plus, Raymond, TVS Motors, Retail chains.",
         image: placeholders.training,
       },
     ],
@@ -198,7 +198,7 @@ export const programsDetailed = {
       { value: 4800, label: 'Youths received entrepreneurship training' },
       { value: 3600, label: 'Established their own businesses' },
       { value: 16700, label: 'Jobs created' },
-      { value: 500, suffix: '+', label: 'Rural youths placed in companies' },
+      { value: 500, suffix: '+', label: 'Urban youths placed in companies' },
     ],
   },
 
@@ -206,7 +206,7 @@ export const programsDetailed = {
     title: 'Healthy Communities, Strong Futures',
     tagline: 'Improving healthcare access and nutrition awareness in underserved areas',
     image: placeholders.community,
-    challenge: "Rural communities face limited access to healthcare services and nutrition awareness.",
+    challenge: "Urban communities face limited access to healthcare services and nutrition awareness.",
     approach: "We conduct awareness campaigns, health camps, and nutrition education programs in partnership with government health missions.",
     programs: [
       {

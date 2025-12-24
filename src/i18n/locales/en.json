@@ -16,14 +16,14 @@
     "programsDropdown": {
       "allPrograms": "All Programs",
       "livelihoods": "Livelihoods",
-      "farmerCollectives": "Farmer Collectives",
+      "farmerCollectives": "Urban Farmer Collectives",
       "womenEmpowerment": "Women Empowerment",
       "artisanRevival": "Artisan Revival",
       "skillDevelopment": "Skill Development"
     }
   },
   "hero": {
-    "badge": "MISSION • Engross, Enable, Empower",
+    "badge": "Hope Foundation • Engross, Enable, Empower",
     "headline": {
       "part1": "Transforming",
       "families": "165,000+ families",
@@ -37,7 +37,7 @@
   "impact": {
     "badge": "OUR IMPACT",
     "heading": "22 Years of Transforming Lives",
-    "description1": "Over two decades of dedicated service, we've worked tirelessly to create sustainable impact across rural communities. Our holistic approach addresses the root causes of poverty and inequality through education, health, livelihood, and empowerment initiatives.",
+    "description1": "Over two decades of dedicated service, we've worked tirelessly to create sustainable impact across urban communities. Our holistic approach addresses the root causes of poverty and inequality through education, health, livelihood, and empowerment initiatives.",
     "description2": "The statistics below represent real lives changed, communities strengthened, and hope restored. Each number tells a story of transformation and progress towards a more equitable future.",
     "cta": "Learn About Our Programs",
     "stats": {
@@ -45,7 +45,7 @@
       "years": "Years of Service",
       "shgs": "Women SHGs",
       "funds": "Community Funds",
-      "districts": "Districts Covered"
+      "districts": "Zones Covered"
     }
   },
   "programs": {
@@ -65,7 +65,7 @@
     },
     "health": {
       "title": "Health & Nutrition",
-      "description": "Ensuring food security and healthcare access for rural communities."
+      "description": "Ensuring food security and healthcare access for urban communities."
     },
     "learnMore": "Learn More",
     "exploreMore": "EXPLORE MORE"
@@ -75,21 +75,21 @@
     "heading": "Innovation at the Grassroots",
     "shopOnWheel": {
       "title": "Shop on Wheel",
-      "description": "A mobile marketplace bringing SHG and artisan products directly to weekly haats, trade fairs, and urban markets across Odisha."
+      "description": "A mobile marketplace bringing SHG and artisan products directly to local markets, trade fairs, and neighborhoods across Mumbai."
     },
     "janjati": {
-      "title": "Janjati Atmanirbhar Kendra",
-      "description": "A dedicated tribal empowerment center providing culturally-rooted skill training and enterprise support. 700+ tribal individuals trained."
+      "title": "Community Empowerment Center",
+      "description": "A dedicated community empowerment center providing skill training and enterprise support. 700+ individuals trained."
     },
     "odra": {
-      "title": "Odra Desh Marketing Company",
-      "description": "A joint venture marketing company co-owned by two FPOs, aggregating rural products for bulk sales, branding, and e-commerce distribution."
+      "title": "Mumbai Collective Marketing Company",
+      "description": "A joint venture marketing company co-owned by two collectives, aggregating local products for bulk sales, branding, and e-commerce distribution."
     }
   },
   "map": {
     "badge": "OUR REACH",
-    "heading": "Our Operational Districts",
-    "description": "Working across 18 districts in Odisha with varying intensity of programs and community engagement",
+    "heading": "Our Operational Zones",
+    "description": "Working across 12 zones in Mumbai with varying intensity of programs and community engagement",
     "legend": {
       "high": "High Concentration",
       "medium": "Medium Concentration",
@@ -98,13 +98,13 @@
     "sidebar": {
       "families": "Families Reached",
       "programs": "Active Programs",
-      "blocks": "Blocks Covered",
+      "blocks": "Areas Covered",
       "areas": "Focus Areas",
       "noSelection": "Click on any marker on the map",
       "instruction": "to view detailed information"
     },
     "stats": {
-      "districts": "Districts",
+      "districts": "Zones",
       "families": "Families",
       "years": "Years",
       "programs": "Programs"
@@ -121,7 +121,7 @@
     }
   },
   "cta": {
-    "heading": "Be Part of Rural Transformation",
+    "heading": "Be Part of Urban Transformation",
     "description": "Whether you're a development professional, CSR partner, or passionate volunteer, there's a place for you in our mission.",
     "options": {
       "volunteer": {
@@ -140,7 +140,7 @@
     "cta": "Get Involved Today"
   },
   "footer": {
-    "about": "A grassroots development organization transforming rural lives in Odisha since 2002.",
+    "about": "A grassroots development organization transforming lives in Mumbai and Maharashtra since 2002.",
     "tagline": "Engross, Enable, Empower",
     "quickLinks": "Quick Links",
     "links": {
@@ -152,16 +152,16 @@
     },
     "contact": "Contact",
     "registeredOffice": "Registered Office:",
-    "registeredAddress": "Town Planning Colony, Dhenkanal-759013, Odisha",
-    "stateOffice": "State Office:",
-    "stateAddress": "Gajapati Nagar, Bhubaneswar-751005, Odisha",
+    "registeredAddress": "Andheri East, Mumbai - 400069, Maharashtra",
+    "stateOffice": "Head Office:",
+    "stateAddress": "Bandra West, Mumbai - 400050, Maharashtra",
     "legal": {
       "heading": "Legal",
       "privacy": "Privacy Policy",
       "terms": "Terms of Use",
       "reports": "Annual Reports"
     },
-    "copyright": "© 2024 MISSION. All rights reserved.",
-    "builtWith": "Built with care for rural transformation"
+    "copyright": "© 2024 Hope Foundation. All rights reserved.",
+    "builtWith": "Built with care for urban transformation"
   }
 }

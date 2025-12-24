@@ -25,9 +25,12 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* About */}
           <div>
-            <div className="flex items-center space-x-2 mb-4">
-              <Globe className="w-8 h-8 text-saffron-500 dark:text-[rgb(var(--dark-accent-golden))]" />
-              <span className="text-2xl font-heading font-bold">MISSION</span>
+            <div className="mb-4">
+              <img
+                src="/images/hope_logo.png"
+                alt="Hope Foundation Logo"
+                className="h-24 w-auto rounded-full object-cover"
+              />
             </div>
             <p className="text-sm text-gray-600 dark:text-[rgb(var(--dark-text-secondary))] mb-4">
               {t('footer.about')}

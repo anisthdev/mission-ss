@@ -3,7 +3,7 @@ import Hero from "../components/home/Hero";
 import ImpactStats from "../components/home/ImpactStats";
 import WhatWeDo from "../components/home/WhatWeDo";
 import FeaturedInitiatives from "../components/home/FeaturedInitiatives";
-import OdishaMap from "../components/home/OdishaMap";
+import MumbaiMap from "../components/home/OdishaMap";
 import PartnersStrip from "../components/home/PartnersStrip";
 import CTASection from "../components/home/CTASection";
 
@@ -15,7 +15,7 @@ export default function Home() {
       <ImpactStats />
       <WhatWeDo />
       <FeaturedInitiatives />
-      <OdishaMap />
+      <MumbaiMap />
       <PartnersStrip />
       <CTASection />
     </div>

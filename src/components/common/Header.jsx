@@ -54,13 +54,14 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 bg-white/90 dark:bg-[rgb(var(--dark-bg-secondary))]/90 backdrop-blur-md border-b border-sand-200 dark:border-[rgb(var(--dark-border))] transition-colors">
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 lg:h-20">
+        <div className="flex items-center justify-between h-20 lg:h-24">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
-            <Globe className="w-8 h-8 text-saffron-500 dark:text-[rgb(var(--dark-accent-saffron))]" />
-            <span className="text-2xl font-heading font-bold text-indigo-900 dark:text-[rgb(var(--dark-text-primary))]">
-              MISSION
-            </span>
+          <Link to="/" className="flex items-center">
+            <img
+              src="/images/hope_logo.png"
+              alt="Hope Foundation Logo"
+              className="h-20 lg:h-24 w-auto rounded-full object-cover"
+            />
           </Link>
 
           {/* Desktop Navigation */}

@@ -110,7 +110,7 @@ export default function Hero() {
                   transition={{ delay: 0.3 }}
                 >
                   <span className="inline-block px-5 py-2 rounded-full bg-saffron-500/20 dark:bg-saffron-400/20 border border-saffron-400/30 text-saffron-300 dark:text-saffron-200 text-sm font-semibold tracking-wide backdrop-blur-sm shadow-lg">
-                    MISSION • Engross, Enable, Empower
+                    Hope Foundation • Engross, Enable, Empower
                   </span>
                 </motion.div>
 
@@ -150,8 +150,8 @@ export default function Hero() {
                     <div className="text-sm text-gray-200">Families Empowered</div>
                   </div>
                   <div className="backdrop-blur-md bg-white/10 dark:bg-white/5 rounded-xl px-6 py-4 border border-white/20 shadow-2xl">
-                    <div className="text-4xl font-bold font-mono text-white">18</div>
-                    <div className="text-sm text-gray-200">Districts Reached</div>
+                    <div className="text-4xl font-bold font-mono text-white">12</div>
+                    <div className="text-sm text-gray-200">Zones Reached</div>
                   </div>
                 </motion.div>
 

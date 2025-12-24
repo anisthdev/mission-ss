@@ -1,7 +1,7 @@
 export const impactStats = {
   mainStats: [
     { value: 165000, suffix: "+", label: "Families Empowered" },
-    { value: 18, label: "Districts Covered" },
+    { value: 12, label: "Zones Covered" },
     { value: 147000, label: "Women in SHG Network" },
     { value: 22, prefix: "₹", suffix: " Cr+", label: "Community Funds Mobilized" },
     { value: 22, suffix: "+", label: "Years of Service" },
@@ -10,25 +10,25 @@ export const impactStats = {
   overallReach: [
     { value: 168015, label: "Individuals Reached" },
     { value: 165036, label: "Households Served" },
-    { value: 1157, label: "Revenue Villages" },
-    { value: 18, label: "Districts" },
-    { value: 285, label: "Gram Panchayats" },
+    { value: 1157, label: "Communities" },
+    { value: 12, label: "Zones" },
+    { value: 285, label: "Neighborhoods" },
     { value: 136, label: "Projects Executed" },
   ],
 
   institutions: [
     { value: 14375, label: "Women Self-Help Groups" },
-    { value: 217, label: "Village Organizations" },
+    { value: 217, label: "Community Organizations" },
     { value: 82, label: "SHG Federations" },
-    { value: 2, label: "Farmer Producer Organizations" },
-    { value: 1, label: "Bamboo OFPO" },
+    { value: 2, label: "Urban Farmer Collectives" },
+    { value: 1, label: "Artisan Collective" },
     { value: 1, label: "Joint Venture Marketing Company" },
   ],
 
   economicImpact: [
     { value: "₹22 Cr+", label: "Community Funds Mobilized" },
     { value: "₹82 Cr", label: "Credit Linkage for SHGs" },
-    { value: "₹80 Lakhs", label: "FPO Turnover (2 years)" },
+    { value: "₹80 Lakhs", label: "Collective Turnover (2 years)" },
     { value: "16,700", label: "Jobs Created" },
     { value: "3,600", label: "Businesses Established" },
   ],
@@ -41,13 +41,13 @@ export const impactStats = {
   ],
 
   programPerformance: [
-    { program: "FPO-CSS", beneficiaries: "1,800 Farmers", achievement: 100 },
+    { program: "Urban Farming Initiative", beneficiaries: "1,800 Farmers", achievement: 100 },
     { program: "LEDP", beneficiaries: "270 Women", achievement: 79 },
     { program: "PM Vishwakarma", beneficiaries: "130 Artisans", achievement: 100 },
-    { program: "Gramodyog Vikas", beneficiaries: "70 SHG Members", achievement: 30 },
-    { program: "MDA Awareness", beneficiaries: "12,000 Community", achievement: 100 },
+    { program: "Urban Enterprise Dev", beneficiaries: "70 SHG Members", achievement: 30 },
+    { program: "Health Awareness", beneficiaries: "12,000 Community", achievement: 100 },
     { program: "EDP", beneficiaries: "360 Trainees", achievement: 52 },
-    { program: "OFPO Bamboo", beneficiaries: "318 Members", achievement: 100 },
+    { program: "Artisan Collective", beneficiaries: "318 Members", achievement: 100 },
   ],
 };
 

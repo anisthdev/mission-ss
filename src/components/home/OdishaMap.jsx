@@ -2,18 +2,18 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { GoogleMap, LoadScript, MarkerF, InfoWindowF } from '@react-google-maps/api';
-import { odishaDistricts } from '../../data/odishaDistrictsData';
+import { mumbaiZones } from '../../data/mumbaiZonesData';
 import { fadeInUp } from '../../utils/animations';
 import { X } from 'lucide-react';
 
-export default function OdishaMap() {
+export default function MumbaiMap() {
   const { t } = useTranslation();
-  const [selectedDistrict, setSelectedDistrict] = useState(null);
+  const [selectedZone, setSelectedZone] = useState(null);
   const [hoveredMarker, setHoveredMarker] = useState(null);
 
   const apiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
 
-  const operationalDistricts = odishaDistricts.filter(d => d.isOperational && d.lat && d.lng);
+  const operationalZones = mumbaiZones.filter(d => d.isOperational && d.lat && d.lng);
 
   const mapContainerStyle = {
     width: '100%',
@@ -23,8 +23,8 @@ export default function OdishaMap() {
   };
 
   const mapCenter = {
-    lat: 20.5937,
-    lng: 84.8394
+    lat: 19.0760,
+    lng: 72.8777
   };
 
   const mapOptions = {
@@ -47,10 +47,10 @@ export default function OdishaMap() {
     ]
   };
 
-  const getMarkerColor = (district) => {
-    if (selectedDistrict?.id === district.id) return 'FF0000';
-    if (hoveredMarker?.id === district.id) return district.color.replace('#', '');
-    return district.color.replace('#', '');
+  const getMarkerColor = (zone) => {
+    if (selectedZone?.id === zone.id) return 'FF0000';
+    if (hoveredMarker?.id === zone.id) return zone.color.replace('#', '');
+    return zone.color.replace('#', '');
   };
 
   return (
@@ -92,32 +92,32 @@ export default function OdishaMap() {
                   zoom={7}
                   options={mapOptions}
                 >
-                  {operationalDistricts.map((district) => (
+                  {operationalZones.map((zone) => (
                     <MarkerF
-                      key={district.id}
-                      position={{ lat: district.lat, lng: district.lng }}
-                      onClick={() => setSelectedDistrict(district)}
-                      onMouseOver={() => setHoveredMarker(district)}
+                      key={zone.id}
+                      position={{ lat: zone.lat, lng: zone.lng }}
+                      onClick={() => setSelectedZone(zone)}
+                      onMouseOver={() => setHoveredMarker(zone)}
                       onMouseOut={() => setHoveredMarker(null)}
                       icon={{
                         path: 'M 0,-20 a 20,20 0 1,1 0,40 a 20,20 0 1,1 0,-40',
-                        fillColor: `#${getMarkerColor(district)}`,
+                        fillColor: `#${getMarkerColor(zone)}`,
                         fillOpacity: 1,
                         strokeColor: '#ffffff',
                         strokeWeight: 3,
                         scale: 0.8,
                         anchor: { x: 0, y: 0 }
                       }}
-                      title={district.name}
+                      title={zone.name}
                     >
-                      {selectedDistrict?.id === district.id && (
+                      {selectedZone?.id === zone.id && (
                         <InfoWindowF
-                          onCloseClick={() => setSelectedDistrict(null)}
-                          position={{ lat: district.lat, lng: district.lng }}
+                          onCloseClick={() => setSelectedZone(null)}
+                          position={{ lat: zone.lat, lng: zone.lng }}
                         >
                           <div className="p-2 bg-white dark:bg-slate-800 rounded text-sm">
-                            <p className="font-bold text-gray-900 dark:text-white">{district.name}</p>
-                            <p className="text-xs text-gray-600 dark:text-gray-400">{district.status}</p>
+                            <p className="font-bold text-gray-900 dark:text-white">{zone.name}</p>
+                            <p className="text-xs text-gray-600 dark:text-gray-400">{zone.status}</p>
                           </div>
                         </InfoWindowF>
                       )}
@@ -144,7 +144,7 @@ export default function OdishaMap() {
             </div>
           </motion.div>
 
-          {/* District Details Sidebar */}
+          {/* Zone Details Sidebar */}
           <motion.div
             variants={fadeInUp}
             initial="hidden"
@@ -153,14 +153,14 @@ export default function OdishaMap() {
             transition={{ delay: 0.2 }}
             className="lg:col-span-1"
           >
-            {selectedDistrict ? (
+            {selectedZone ? (
               <div className="bg-gradient-to-br from-saffron-50 to-orange-50 dark:from-slate-800 dark:to-slate-700 rounded-3xl p-6 shadow-xl sticky top-20 max-h-96 overflow-y-auto">
                 <div className="flex items-start justify-between mb-4">
                   <h3 className="text-2xl font-heading font-bold text-gray-900 dark:text-white">
-                    {selectedDistrict.name}
+                    {selectedZone.name}
                   </h3>
                   <button
-                    onClick={() => setSelectedDistrict(null)}
+                    onClick={() => setSelectedZone(null)}
                     className="text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 flex-shrink-0"
                   >
                     <X size={24} />
@@ -169,24 +169,24 @@ export default function OdishaMap() {
 
                 <div className="mb-4">
                   <span className="inline-block px-3 py-1 rounded-full bg-saffron-200 dark:bg-saffron-900/50 text-saffron-700 dark:text-saffron-300 text-xs font-semibold">
-                    {selectedDistrict.status}
+                    {selectedZone.status}
                   </span>
                 </div>
 
-                {selectedDistrict.families && (
+                {selectedZone.families && (
                   <div className="mb-4">
                     <p className="text-sm text-gray-600 dark:text-gray-400 mb-1">{t('map.sidebar.families')}</p>
                     <p className="text-2xl font-bold text-gray-900 dark:text-white">
-                      {selectedDistrict.families.toLocaleString()}+
+                      {selectedZone.families.toLocaleString()}+
                     </p>
                   </div>
                 )}
 
-                {selectedDistrict.programs && selectedDistrict.programs.length > 0 && (
+                {selectedZone.programs && selectedZone.programs.length > 0 && (
                   <div className="mb-4">
                     <p className="text-sm font-semibold text-gray-900 dark:text-white mb-2">{t('map.sidebar.programs')}</p>
                     <ul className="space-y-1">
-                      {selectedDistrict.programs.map((program, idx) => (
+                      {selectedZone.programs.map((program, idx) => (
                         <li key={idx} className="text-sm text-gray-700 dark:text-gray-300 flex items-start gap-2">
                           <span className="text-saffron-600 dark:text-saffron-400 mt-1">•</span>
                           {program}
@@ -196,11 +196,11 @@ export default function OdishaMap() {
                   </div>
                 )}
 
-                {selectedDistrict.blocks && selectedDistrict.blocks.length > 0 && (
+                {selectedZone.blocks && selectedZone.blocks.length > 0 && (
                   <div className="mb-4">
                     <p className="text-sm font-semibold text-gray-900 dark:text-white mb-2">{t('map.sidebar.blocks')}</p>
                     <div className="flex flex-wrap gap-2">
-                      {selectedDistrict.blocks.map((block, idx) => (
+                      {selectedZone.blocks.map((block, idx) => (
                         <span
                           key={idx}
                           className="text-xs bg-white dark:bg-slate-700 text-gray-700 dark:text-gray-300 px-2 py-1 rounded-full"
@@ -212,11 +212,11 @@ export default function OdishaMap() {
                   </div>
                 )}
 
-                {selectedDistrict.areas && selectedDistrict.areas.length > 0 && (
+                {selectedZone.areas && selectedZone.areas.length > 0 && (
                   <div>
                     <p className="text-sm font-semibold text-gray-900 dark:text-white mb-2">{t('map.sidebar.areas')}</p>
                     <div className="flex flex-wrap gap-2">
-                      {selectedDistrict.areas.map((area, idx) => (
+                      {selectedZone.areas.map((area, idx) => (
                         <span
                           key={idx}
                           className="text-xs bg-white dark:bg-slate-700 text-gray-700 dark:text-gray-300 px-2 py-1 rounded-full"
@@ -247,7 +247,7 @@ export default function OdishaMap() {
           className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto"
         >
           <div className="bg-saffron-50 dark:bg-slate-800 rounded-2xl p-6 text-center">
-            <p className="text-3xl font-bold text-saffron-600 dark:text-saffron-400 mb-1">18</p>
+            <p className="text-3xl font-bold text-saffron-600 dark:text-saffron-400 mb-1">12</p>
             <p className="text-sm text-gray-600 dark:text-gray-400">{t('map.stats.districts')}</p>
           </div>
           <div className="bg-emerald-50 dark:bg-slate-800 rounded-2xl p-6 text-center">
