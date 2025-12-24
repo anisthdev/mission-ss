@@ -82,7 +82,7 @@ export default function MumbaiMap() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="lg:col-span-2"
+            className="lg:col-span-2 order-2 lg:order-1"
           >
             <div className="bg-gray-50 dark:bg-slate-800 rounded-3xl p-6 shadow-xl">
               <LoadScript googleMapsApiKey={apiKey}>
@@ -151,10 +151,10 @@ export default function MumbaiMap() {
             whileInView="visible"
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="lg:col-span-1"
+            className="lg:col-span-1 order-1 lg:order-2"
           >
             {selectedZone ? (
-              <div className="bg-gradient-to-br from-hope-50 to-orange-50 dark:from-slate-800 dark:to-slate-700 rounded-3xl p-6 shadow-xl sticky top-20 max-h-96 overflow-y-auto">
+              <div className="bg-gradient-to-br from-hope-50 to-orange-50 dark:from-slate-800 dark:to-slate-700 rounded-3xl p-6 shadow-xl sticky top-20">
                 <div className="flex items-start justify-between mb-4">
                   <h3 className="text-2xl font-heading font-bold text-gray-900 dark:text-white">
                     {selectedZone.name}
