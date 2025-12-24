@@ -89,7 +89,7 @@ export default function MumbaiMap() {
                 <GoogleMap
                   mapContainerStyle={mapContainerStyle}
                   center={mapCenter}
-                  zoom={7}
+                  zoom={11}
                   options={mapOptions}
                 >
                   {operationalZones.map((zone) => (

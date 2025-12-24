@@ -60,7 +60,7 @@ export default function Header() {
             <img
               src="/images/hope_logo.png"
               alt="Hope Foundation Logo"
-              className="h-20 lg:h-24 w-auto rounded-full object-cover"
+              className="h-20 lg:h-24 w-auto rounded-full object-cover opacity-90"
             />
           </Link>
 

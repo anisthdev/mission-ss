@@ -11,7 +11,7 @@ export default function ImpactStats() {
       suffix: 'K+',
       labelKey: 'impact.stats.families',
       image: 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=800&q=80',
-      gridClass: 'col-span-2 row-span-2' // Large
+      gridClass: 'col-span-1 sm:col-span-2 lg:col-span-2 row-span-1 sm:row-span-2' // Large on desktop, normal on mobile
     },
     {
       numericValue: 22,
@@ -33,7 +33,7 @@ export default function ImpactStats() {
       suffix: ' Cr+',
       labelKey: 'impact.stats.funds',
       image: 'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=800&q=80',
-      gridClass: 'col-span-2 row-span-1' // Wide
+      gridClass: 'col-span-1 sm:col-span-2 lg:col-span-2 row-span-1' // Wide on desktop, normal on mobile
     },
     {
       numericValue: 18,
@@ -80,7 +80,7 @@ export default function ImpactStats() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <div className="grid grid-cols-3 auto-rows-[200px] gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 auto-rows-[200px] gap-4">
               {bentoStats.map((stat, index) => (
                 <motion.div
                   key={index}

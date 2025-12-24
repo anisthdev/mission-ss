@@ -90,7 +90,7 @@ export default function Hero() {
       </AnimatePresence>
 
       {/* Content Container */}
-      <div className="relative h-full z-10 flex items-center">
+      <div className="relative h-full z-10 flex items-center pb-32 md:pb-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl">
             <AnimatePresence mode="wait" custom={direction}>
@@ -139,19 +139,19 @@ export default function Hero() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.6 }}
-                  className="flex flex-wrap gap-8 pt-4"
+                  className="flex flex-wrap gap-4 md:gap-8 pt-4"
                 >
-                  <div className="backdrop-blur-md bg-white/10 dark:bg-white/5 rounded-xl px-6 py-4 border border-white/20 shadow-2xl">
-                    <div className="text-4xl font-bold font-mono text-white">22+</div>
-                    <div className="text-sm text-gray-200">Years of Impact</div>
+                  <div className="backdrop-blur-md bg-white/10 dark:bg-white/5 rounded-xl px-4 py-3 md:px-6 md:py-4 border border-white/20 shadow-2xl">
+                    <div className="text-3xl md:text-4xl font-bold font-mono text-white">22+</div>
+                    <div className="text-xs md:text-sm text-gray-200">Years of Impact</div>
                   </div>
-                  <div className="backdrop-blur-md bg-white/10 dark:bg-white/5 rounded-xl px-6 py-4 border border-white/20 shadow-2xl">
-                    <div className="text-4xl font-bold font-mono text-white">165K+</div>
-                    <div className="text-sm text-gray-200">Families Empowered</div>
+                  <div className="backdrop-blur-md bg-white/10 dark:bg-white/5 rounded-xl px-4 py-3 md:px-6 md:py-4 border border-white/20 shadow-2xl">
+                    <div className="text-3xl md:text-4xl font-bold font-mono text-white">165K+</div>
+                    <div className="text-xs md:text-sm text-gray-200">Families Empowered</div>
                   </div>
-                  <div className="backdrop-blur-md bg-white/10 dark:bg-white/5 rounded-xl px-6 py-4 border border-white/20 shadow-2xl">
-                    <div className="text-4xl font-bold font-mono text-white">12</div>
-                    <div className="text-sm text-gray-200">Zones Reached</div>
+                  <div className="backdrop-blur-md bg-white/10 dark:bg-white/5 rounded-xl px-4 py-3 md:px-6 md:py-4 border border-white/20 shadow-2xl">
+                    <div className="text-3xl md:text-4xl font-bold font-mono text-white">12</div>
+                    <div className="text-xs md:text-sm text-gray-200">Zones Reached</div>
                   </div>
                 </motion.div>
 
@@ -189,7 +189,7 @@ export default function Hero() {
       </div>
 
       {/* Navigation Controls */}
-      <div className="absolute bottom-12 left-0 right-0 z-20">
+      <div className="absolute bottom-6 md:bottom-12 left-0 right-0 z-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between max-w-4xl">
             {/* Dots Navigation */}
