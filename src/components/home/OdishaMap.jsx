@@ -63,7 +63,7 @@ export default function MumbaiMap() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <span className="inline-block px-4 py-2 rounded-full bg-saffron-100 dark:bg-saffron-900/30 text-saffron-600 dark:text-saffron-400 text-sm font-semibold mb-4">
+          <span className="inline-block px-4 py-2 rounded-full bg-hope-100 dark:bg-hope-900/30 text-hope-600 dark:text-hope-400 text-sm font-semibold mb-4">
             {t('map.badge')}
           </span>
           <h2 className="text-4xl md:text-5xl font-heading font-bold text-gray-900 dark:text-white mb-4">
@@ -154,7 +154,7 @@ export default function MumbaiMap() {
             className="lg:col-span-1"
           >
             {selectedZone ? (
-              <div className="bg-gradient-to-br from-saffron-50 to-orange-50 dark:from-slate-800 dark:to-slate-700 rounded-3xl p-6 shadow-xl sticky top-20 max-h-96 overflow-y-auto">
+              <div className="bg-gradient-to-br from-hope-50 to-orange-50 dark:from-slate-800 dark:to-slate-700 rounded-3xl p-6 shadow-xl sticky top-20 max-h-96 overflow-y-auto">
                 <div className="flex items-start justify-between mb-4">
                   <h3 className="text-2xl font-heading font-bold text-gray-900 dark:text-white">
                     {selectedZone.name}
@@ -168,7 +168,7 @@ export default function MumbaiMap() {
                 </div>
 
                 <div className="mb-4">
-                  <span className="inline-block px-3 py-1 rounded-full bg-saffron-200 dark:bg-saffron-900/50 text-saffron-700 dark:text-saffron-300 text-xs font-semibold">
+                  <span className="inline-block px-3 py-1 rounded-full bg-hope-200 dark:bg-hope-900/50 text-hope-700 dark:text-hope-300 text-xs font-semibold">
                     {selectedZone.status}
                   </span>
                 </div>
@@ -188,7 +188,7 @@ export default function MumbaiMap() {
                     <ul className="space-y-1">
                       {selectedZone.programs.map((program, idx) => (
                         <li key={idx} className="text-sm text-gray-700 dark:text-gray-300 flex items-start gap-2">
-                          <span className="text-saffron-600 dark:text-saffron-400 mt-1">•</span>
+                          <span className="text-hope-600 dark:text-hope-400 mt-1">•</span>
                           {program}
                         </li>
                       ))}
@@ -246,8 +246,8 @@ export default function MumbaiMap() {
           transition={{ delay: 0.3 }}
           className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto"
         >
-          <div className="bg-saffron-50 dark:bg-slate-800 rounded-2xl p-6 text-center">
-            <p className="text-3xl font-bold text-saffron-600 dark:text-saffron-400 mb-1">12</p>
+          <div className="bg-hope-50 dark:bg-slate-800 rounded-2xl p-6 text-center">
+            <p className="text-3xl font-bold text-hope-600 dark:text-hope-400 mb-1">12</p>
             <p className="text-sm text-gray-600 dark:text-gray-400">{t('map.stats.districts')}</p>
           </div>
           <div className="bg-emerald-50 dark:bg-slate-800 rounded-2xl p-6 text-center">

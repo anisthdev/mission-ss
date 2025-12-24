@@ -20,7 +20,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-sand-100 dark:bg-[rgb(var(--dark-bg-secondary))] text-indigo-900 dark:text-[rgb(var(--dark-text-primary))] border-t border-sand-200 dark:border-[rgb(var(--dark-border))]">
+    <footer className="bg-sand-100 dark:bg-[rgb(var(--dark-bg-secondary))] text-slate-600 dark:text-[rgb(var(--dark-text-primary))] border-t border-sand-200 dark:border-[rgb(var(--dark-border))]">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* About */}
@@ -35,7 +35,7 @@ export default function Footer() {
             <p className="text-sm text-gray-600 dark:text-[rgb(var(--dark-text-secondary))] mb-4">
               {t('footer.about')}
             </p>
-            <p className="text-xs font-semibold text-saffron-600 dark:text-[rgb(var(--dark-accent-golden))]">
+            <p className="text-xs font-semibold text-hope-600 dark:text-[rgb(var(--dark-accent-radiance))]">
               {t('footer.tagline')}
             </p>
           </div>
@@ -49,7 +49,7 @@ export default function Footer() {
                   <Link
                     to={link.path}
                     className="text-sm text-gray-700 dark:text-[rgb(var(--dark-text-secondary))]
-                               hover:text-saffron-600 dark:hover:text-[rgb(var(--dark-accent-golden))]
+                               hover:text-hope-600 dark:hover:text-[rgb(var(--dark-accent-radiance))]
                                transition-colors"
                   >
                     {link.name}
@@ -66,7 +66,7 @@ export default function Footer() {
               <li className="flex items-start gap-2">
                 <MapPin size={16} className="mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="font-semibold text-indigo-900 dark:text-[rgb(var(--dark-text-primary))]">
+                  <p className="font-semibold text-slate-600 dark:text-[rgb(var(--dark-text-primary))]">
                     {t('footer.registeredOffice')}
                   </p>
                   <p>{t('footer.registeredAddress')}</p>
@@ -75,7 +75,7 @@ export default function Footer() {
               <li className="flex items-start gap-2">
                 <MapPin size={16} className="mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="font-semibold text-indigo-900 dark:text-[rgb(var(--dark-text-primary))]">
+                  <p className="font-semibold text-slate-600 dark:text-[rgb(var(--dark-text-primary))]">
                     {t('footer.stateOffice')}
                   </p>
                   <p>{t('footer.stateAddress')}</p>
@@ -85,7 +85,7 @@ export default function Footer() {
                 <Mail size={16} />
                 <a
                   href="mailto:info@missionodisha.org"
-                  className="hover:text-saffron-600 dark:hover:text-[rgb(var(--dark-accent-golden))] transition-colors"
+                  className="hover:text-hope-600 dark:hover:text-[rgb(var(--dark-accent-radiance))] transition-colors"
                 >
                   info@missionodisha.org
                 </a>
@@ -106,7 +106,7 @@ export default function Footer() {
                   <Link
                     to={link.path}
                     className="text-sm text-gray-700 dark:text-[rgb(var(--dark-text-secondary))]
-                               hover:text-saffron-600 dark:hover:text-[rgb(var(--dark-accent-golden))]
+                               hover:text-hope-600 dark:hover:text-[rgb(var(--dark-accent-radiance))]
                                transition-colors"
                   >
                     {link.name}

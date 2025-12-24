@@ -44,7 +44,7 @@ export default function WhatWeDo() {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-forest-500 to-forest-600 dark:from-forest-900 dark:to-forest-950 relative overflow-hidden">
+    <section className="py-20 bg-gradient-to-br from-nurture-500 to-nurture-600 dark:from-nurture-900 dark:to-nurture-950 relative overflow-hidden">
       {/* Decorative background elements */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full blur-3xl" />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-white/5 rounded-full blur-3xl" />
@@ -90,14 +90,14 @@ export default function WhatWeDo() {
               {/* Content */}
               <div className="flex-1 flex flex-col justify-between p-4">
                 <div>
-                  <h3 className="text-xl md:text-2xl font-heading font-bold text-forest-700 dark:text-white mb-2">
+                  <h3 className="text-xl md:text-2xl font-heading font-bold text-nurture-700 dark:text-white mb-2">
                     {t(program.titleKey)}
                   </h3>
                   <p className="text-sm md:text-base text-gray-700 dark:text-gray-300 mb-4 line-clamp-3">
                     {t(program.descriptionKey)}
                   </p>
                 </div>
-                <div className="flex items-center text-forest-600 dark:text-forest-400 font-semibold text-sm group-hover:gap-3 gap-2 transition-all opacity-0 group-hover:opacity-100">
+                <div className="flex items-center text-nurture-600 dark:text-nurture-400 font-semibold text-sm group-hover:gap-3 gap-2 transition-all opacity-0 group-hover:opacity-100">
                   {t('programs.learnMore')}
                   <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
                 </div>
@@ -115,7 +115,7 @@ export default function WhatWeDo() {
         >
           <button
             onClick={() => navigate('/programs')}
-            className="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-white text-forest-600 font-bold shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 group"
+            className="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-white text-nurture-600 font-bold shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 group"
           >
             {t('programs.exploreMore')}
             <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />

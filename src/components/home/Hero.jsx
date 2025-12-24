@@ -109,7 +109,7 @@ export default function Hero() {
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: 0.3 }}
                 >
-                  <span className="inline-block px-5 py-2 rounded-full bg-saffron-500/20 dark:bg-saffron-400/20 border border-saffron-400/30 text-saffron-300 dark:text-saffron-200 text-sm font-semibold tracking-wide backdrop-blur-sm shadow-lg">
+                  <span className="inline-block px-5 py-2 rounded-full bg-hope-500/20 dark:bg-hope-400/20 border border-hope-400/30 text-hope-300 dark:text-hope-200 text-sm font-semibold tracking-wide backdrop-blur-sm shadow-lg">
                     Hope Foundation • Engross, Enable, Empower
                   </span>
                 </motion.div>
@@ -176,7 +176,7 @@ export default function Hero() {
                       variant="outline"
                       size="lg"
                       onClick={() => navigate('/get-involved')}
-                      className="border-white text-white hover:bg-white hover:text-indigo-900 shadow-2xl backdrop-blur-sm"
+                      className="border-white text-white hover:bg-white hover:text-slate-600 shadow-2xl backdrop-blur-sm"
                     >
                       Get Involved
                     </Button>
@@ -200,7 +200,7 @@ export default function Hero() {
                   onClick={() => goToSlide(index)}
                   className={`transition-all duration-300 rounded-full ${
                     index === currentSlide
-                      ? 'w-12 h-3 bg-saffron-400 shadow-lg shadow-saffron-400/50'
+                      ? 'w-12 h-3 bg-hope-400 shadow-lg shadow-hope-400/50'
                       : 'w-3 h-3 bg-white/50 hover:bg-white/80'
                   }`}
                   aria-label={`Go to slide ${index + 1}`}

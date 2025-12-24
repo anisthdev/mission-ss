@@ -77,8 +77,8 @@ export default function Header() {
                     <button
                       className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors flex items-center gap-1
                                  ${isActive(item.path)
-                                   ? 'text-saffron-500 dark:text-[rgb(var(--dark-accent-saffron))]'
-                                   : 'text-indigo-900 dark:text-[rgb(var(--dark-text-primary))] hover:text-saffron-500 dark:hover:text-[rgb(var(--dark-accent-saffron)))]'
+                                   ? 'text-hope-500 dark:text-[rgb(var(--dark-accent-hope))]'
+                                   : 'text-slate-600 dark:text-[rgb(var(--dark-text-primary))] hover:text-hope-500 dark:hover:text-[rgb(var(--dark-accent-saffron)))]'
                                  }`}
                     >
                       {t(item.nameKey)}
@@ -100,9 +100,9 @@ export default function Header() {
                             <Link
                               key={subItem.path}
                               to={subItem.path}
-                              className="block px-4 py-2 text-sm text-indigo-900 dark:text-[rgb(var(--dark-text-primary))]
+                              className="block px-4 py-2 text-sm text-slate-600 dark:text-[rgb(var(--dark-text-primary))]
                                        hover:bg-sand-100 dark:hover:bg-[rgb(var(--dark-bg-hover))]
-                                       hover:text-saffron-500 dark:hover:text-[rgb(var(--dark-accent-saffron))]
+                                       hover:text-hope-500 dark:hover:text-[rgb(var(--dark-accent-hope))]
                                        transition-colors"
                             >
                               {t(subItem.nameKey)}
@@ -117,8 +117,8 @@ export default function Header() {
                     to={item.path}
                     className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors
                                ${isActive(item.path)
-                                 ? 'text-saffron-500 dark:text-[rgb(var(--dark-accent-saffron))]'
-                                 : 'text-indigo-900 dark:text-[rgb(var(--dark-text-primary))] hover:text-saffron-500 dark:hover:text-[rgb(var(--dark-accent-saffron)))]'
+                                 ? 'text-hope-500 dark:text-[rgb(var(--dark-accent-hope))]'
+                                 : 'text-slate-600 dark:text-[rgb(var(--dark-text-primary))] hover:text-hope-500 dark:hover:text-[rgb(var(--dark-accent-saffron)))]'
                                }`}
                   >
                     {t(item.nameKey)}
@@ -136,7 +136,7 @@ export default function Header() {
             {/* Mobile menu button */}
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="lg:hidden p-2 rounded-lg text-indigo-900 dark:text-[rgb(var(--dark-text-primary))]
+              className="lg:hidden p-2 rounded-lg text-slate-600 dark:text-[rgb(var(--dark-text-primary))]
                          hover:bg-sand-100 dark:hover:bg-[rgb(var(--dark-bg-hover))]
                          transition-colors"
               aria-label="Toggle menu"
@@ -164,7 +164,7 @@ export default function Header() {
                         <button
                           onClick={() => toggleDropdown(item.nameKey)}
                           className="w-full flex items-center justify-between px-3 py-2 rounded-lg text-base font-medium
-                                     text-indigo-900 dark:text-[rgb(var(--dark-text-primary))]
+                                     text-slate-600 dark:text-[rgb(var(--dark-text-primary))]
                                      hover:bg-sand-100 dark:hover:bg-[rgb(var(--dark-bg-hover))]
                                      transition-colors"
                         >
@@ -186,7 +186,7 @@ export default function Header() {
                                   onClick={() => setIsMobileMenuOpen(false)}
                                   className="block px-3 py-2 rounded-lg text-sm text-gray-600 dark:text-[rgb(var(--dark-text-secondary))]
                                            hover:bg-sand-100 dark:hover:bg-[rgb(var(--dark-bg-hover))]
-                                           hover:text-saffron-500 dark:hover:text-[rgb(var(--dark-accent-saffron))]
+                                           hover:text-hope-500 dark:hover:text-[rgb(var(--dark-accent-hope))]
                                            transition-colors"
                                 >
                                   {t(subItem.nameKey)}
@@ -202,8 +202,8 @@ export default function Header() {
                         onClick={() => setIsMobileMenuOpen(false)}
                         className={`block px-3 py-2 rounded-lg text-base font-medium transition-colors
                                    ${isActive(item.path)
-                                     ? 'text-saffron-500 dark:text-[rgb(var(--dark-accent-saffron))] bg-sand-100 dark:bg-[rgb(var(--dark-bg-hover))]'
-                                     : 'text-indigo-900 dark:text-[rgb(var(--dark-text-primary))] hover:bg-sand-100 dark:hover:bg-[rgb(var(--dark-bg-hover))]'
+                                     ? 'text-hope-500 dark:text-[rgb(var(--dark-accent-hope))] bg-sand-100 dark:bg-[rgb(var(--dark-bg-hover))]'
+                                     : 'text-slate-600 dark:text-[rgb(var(--dark-text-primary))] hover:bg-sand-100 dark:hover:bg-[rgb(var(--dark-bg-hover))]'
                                    }`}
                       >
                         {t(item.nameKey)}

@@ -10,7 +10,7 @@ export default function HeroAlt() {
   const { t } = useTranslation();
 
   return (
-    <section className="relative min-h-screen overflow-hidden bg-gradient-to-br from-sand-50 via-white to-saffron-50 dark:from-[rgb(var(--dark-bg-primary))] dark:via-[rgb(var(--dark-bg-secondary))] dark:to-[rgb(var(--dark-bg-tertiary))]">
+    <section className="relative min-h-screen overflow-hidden bg-gradient-to-br from-sand-50 via-white to-hope-50 dark:from-[rgb(var(--dark-bg-primary))] dark:via-[rgb(var(--dark-bg-secondary))] dark:to-[rgb(var(--dark-bg-tertiary))]">
       {/* SVG Pattern Background */}
       <div className="absolute inset-0 opacity-[0.03] dark:opacity-[0.05]">
         <svg width="100%" height="100%">
@@ -28,8 +28,8 @@ export default function HeroAlt() {
       </div>
 
       {/* Decorative Shapes */}
-      <div className="absolute top-20 right-10 w-72 h-72 bg-saffron-200/20 dark:bg-saffron-400/10 rounded-full blur-3xl" />
-      <div className="absolute bottom-20 left-10 w-96 h-96 bg-teal-200/20 dark:bg-teal-400/10 rounded-full blur-3xl" />
+      <div className="absolute top-20 right-10 w-72 h-72 bg-hope-200/20 dark:bg-hope-400/10 rounded-full blur-3xl" />
+      <div className="absolute bottom-20 left-10 w-96 h-96 bg-nurture-200/20 dark:bg-nurture-400/10 rounded-full blur-3xl" />
 
       {/* Content Container */}
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-0">
@@ -47,7 +47,7 @@ export default function HeroAlt() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.6 }}
             >
-              <span className="inline-block px-5 py-2 rounded-full bg-saffron-100 dark:bg-[rgb(var(--dark-bg-tertiary))] border border-saffron-200 dark:border-[rgb(var(--dark-border))] text-saffron-600 dark:text-[rgb(var(--dark-accent-saffron))] text-sm font-semibold tracking-wide shadow-md">
+              <span className="inline-block px-5 py-2 rounded-full bg-hope-100 dark:bg-[rgb(var(--dark-bg-tertiary))] border border-hope-200 dark:border-[rgb(var(--dark-border))] text-hope-600 dark:text-[rgb(var(--dark-accent-hope))] text-sm font-semibold tracking-wide shadow-md">
                 {t('hero.badge')}
               </span>
             </motion.div>
@@ -58,7 +58,7 @@ export default function HeroAlt() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.8 }}
             >
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-heading font-bold text-indigo-900 dark:text-[rgb(var(--dark-text-primary))] leading-tight">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-heading font-bold text-slate-600 dark:text-[rgb(var(--dark-text-primary))] leading-tight">
                 {t('hero.headline.part1')}{" "}
                 <span className="relative inline-block">
                   <RoughNotation
@@ -69,7 +69,7 @@ export default function HeroAlt() {
                     animationDelay={1200}
                     animationDuration={800}
                   >
-                    <span className="relative z-10 text-saffron-500 dark:text-[rgb(var(--dark-accent-saffron))]">
+                    <span className="relative z-10 text-hope-500 dark:text-[rgb(var(--dark-accent-hope))]">
                       {t('hero.headline.families')}
                     </span>
                   </RoughNotation>
@@ -128,7 +128,7 @@ export default function HeroAlt() {
           >
             {/* Decorative background circle */}
             <div className="absolute inset-0 flex items-center justify-center z-0">
-              <div className="w-[1100px] h-[1100px] lg:w-[1250px] lg:h-[1250px] xl:w-[1400px] xl:h-[1400px] rounded-full bg-gradient-to-br from-saffron-200 to-teal-200 dark:from-saffron-900/20 dark:to-teal-900/20 blur-3xl opacity-50" />
+              <div className="w-[1100px] h-[1100px] lg:w-[1250px] lg:h-[1250px] xl:w-[1400px] xl:h-[1400px] rounded-full bg-gradient-to-br from-hope-200 to-nurture-200 dark:from-hope-900/20 dark:to-nurture-900/20 blur-3xl opacity-50" />
             </div>
 
             {/* Main Image */}

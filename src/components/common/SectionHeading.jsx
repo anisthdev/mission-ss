@@ -17,14 +17,14 @@ export default function SectionHeading({
       {subtitle && (
         <motion.p
           variants={fadeInUp}
-          className="text-sm font-semibold tracking-wider uppercase text-saffron-400 dark:text-[rgb(var(--dark-accent-saffron))] mb-2"
+          className="text-sm font-semibold tracking-wider uppercase text-hope-400 dark:text-[rgb(var(--dark-accent-hope))] mb-2"
         >
           {subtitle}
         </motion.p>
       )}
       <motion.h2
         variants={fadeInUp}
-        className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-indigo-900 dark:text-[rgb(var(--dark-text-primary))]"
+        className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-slate-600 dark:text-[rgb(var(--dark-text-primary))]"
       >
         {title}
       </motion.h2>

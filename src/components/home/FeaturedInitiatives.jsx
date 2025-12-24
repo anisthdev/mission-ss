@@ -10,8 +10,8 @@ export default function FeaturedInitiatives() {
   return (
     <section className="py-20 bg-gradient-to-br from-white via-sand-50/30 to-white dark:from-[rgb(var(--dark-bg-primary))] dark:via-[rgb(var(--dark-bg-secondary))] dark:to-[rgb(var(--dark-bg-primary))] relative overflow-hidden">
       {/* Decorative background elements */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-saffron-100/10 dark:bg-saffron-900/5 rounded-full blur-3xl" />
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-teal-100/10 dark:bg-teal-900/5 rounded-full blur-3xl" />
+      <div className="absolute top-0 right-0 w-96 h-96 bg-hope-100/10 dark:bg-hope-900/5 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-nurture-100/10 dark:bg-nurture-900/5 rounded-full blur-3xl" />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <SectionHeading

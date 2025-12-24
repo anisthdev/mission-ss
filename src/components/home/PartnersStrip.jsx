@@ -55,8 +55,8 @@ export default function PartnersStrip() {
   return (
     <section className="py-20 bg-gradient-to-br from-sand-50 via-sand-100 to-sand-50 dark:from-[rgb(var(--dark-bg-primary))] dark:via-[rgb(var(--dark-bg-secondary))] dark:to-[rgb(var(--dark-bg-primary))] border-y-2 border-sand-200/50 dark:border-[rgb(var(--dark-border))] relative overflow-hidden">
       {/* Decorative background elements */}
-      <div className="absolute top-0 left-1/4 w-96 h-96 bg-gradient-to-br from-saffron-200/20 to-transparent dark:from-saffron-400/5 rounded-full blur-3xl" />
-      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-gradient-to-tl from-forest-200/20 to-transparent dark:from-forest-400/5 rounded-full blur-3xl" />
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-gradient-to-br from-hope-200/20 to-transparent dark:from-hope-400/5 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-gradient-to-tl from-nurture-200/20 to-transparent dark:from-nurture-400/5 rounded-full blur-3xl" />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <SectionHeading
@@ -88,12 +88,12 @@ export default function PartnersStrip() {
                 <div className="flex items-center justify-center p-6 rounded-xl min-h-[140px]
                            bg-white dark:bg-[rgb(var(--dark-bg-secondary))]
                            border-2 border-sand-200/70 dark:border-[rgb(var(--dark-border))]
-                           hover:border-saffron-400 dark:hover:border-[rgb(var(--dark-accent-saffron))]
+                           hover:border-hope-400 dark:hover:border-[rgb(var(--dark-accent-hope))]
                            shadow-lg hover:shadow-xl
                            transition-all duration-300
                            overflow-hidden">
                   {/* Gradient overlay on hover */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-saffron-50/50 to-transparent dark:from-saffron-900/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <div className="absolute inset-0 bg-gradient-to-br from-hope-50/50 to-transparent dark:from-hope-900/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
                   <div className="relative flex flex-col items-center justify-center gap-2">
                     {/* Logo */}
@@ -106,14 +106,14 @@ export default function PartnersStrip() {
                       }}
                     />
                     {/* Fallback text */}
-                    <span className="text-sm text-center font-semibold text-gray-700 dark:text-[rgb(var(--dark-text-secondary))] group-hover:text-saffron-600 dark:group-hover:text-[rgb(var(--dark-accent-saffron))] transition-colors">
+                    <span className="text-sm text-center font-semibold text-gray-700 dark:text-[rgb(var(--dark-text-secondary))] group-hover:text-hope-600 dark:group-hover:text-[rgb(var(--dark-accent-hope))] transition-colors">
                       {partner.name}
                     </span>
                   </div>
                 </div>
 
                 {/* Shadow layer */}
-                <div className="absolute inset-0 -z-10 bg-saffron-200/20 dark:bg-saffron-900/10 blur-lg rounded-xl transform translate-y-2 opacity-0 group-hover:opacity-100 transition-opacity" />
+                <div className="absolute inset-0 -z-10 bg-hope-200/20 dark:bg-hope-900/10 blur-lg rounded-xl transform translate-y-2 opacity-0 group-hover:opacity-100 transition-opacity" />
               </motion.div>
             ))}
           </motion.div>
@@ -130,9 +130,9 @@ export default function PartnersStrip() {
             onClick={() => navigate('/partners')}
             className="inline-flex items-center gap-2 px-6 py-3 rounded-full
               bg-white dark:bg-[rgb(var(--dark-bg-secondary))]
-              border-2 border-saffron-400 dark:border-[rgb(var(--dark-accent-saffron))]
-              text-saffron-600 dark:text-[rgb(var(--dark-accent-saffron))]
-              font-semibold hover:gap-3 hover:bg-saffron-50 dark:hover:bg-[rgb(var(--dark-bg-tertiary))]
+              border-2 border-hope-400 dark:border-[rgb(var(--dark-accent-hope))]
+              text-hope-600 dark:text-[rgb(var(--dark-accent-hope))]
+              font-semibold hover:gap-3 hover:bg-hope-50 dark:hover:bg-[rgb(var(--dark-bg-tertiary))]
               shadow-lg hover:shadow-xl
               transition-all group"
           >
@@ -152,52 +152,52 @@ export default function PartnersStrip() {
           <motion.div
             whileHover={{ y: -4 }}
             className="relative group text-center p-8 rounded-2xl
-              bg-gradient-to-br from-saffron-50 to-white dark:from-saffron-900/20 dark:to-[rgb(var(--dark-bg-secondary))]
-              border-2 border-saffron-200 dark:border-saffron-800/30
+              bg-gradient-to-br from-hope-50 to-white dark:from-hope-900/20 dark:to-[rgb(var(--dark-bg-secondary))]
+              border-2 border-hope-200 dark:border-hope-800/30
               shadow-xl hover:shadow-2xl
               transition-all duration-300">
-            <div className="text-5xl font-bold font-mono text-saffron-600 dark:text-[rgb(var(--dark-accent-saffron))] mb-3">
+            <div className="text-5xl font-bold font-mono text-hope-600 dark:text-[rgb(var(--dark-accent-hope))] mb-3">
               119
             </div>
             <div className="text-sm font-semibold text-gray-700 dark:text-[rgb(var(--dark-text-secondary))]">
               {t('partners.stats.government')}
             </div>
             {/* Decorative accent */}
-            <div className="absolute top-4 right-4 w-3 h-3 bg-saffron-500 rounded-full shadow-lg" />
+            <div className="absolute top-4 right-4 w-3 h-3 bg-hope-500 rounded-full shadow-lg" />
           </motion.div>
 
           <motion.div
             whileHover={{ y: -4 }}
             className="relative group text-center p-8 rounded-2xl
-              bg-gradient-to-br from-forest-50 to-white dark:from-forest-900/20 dark:to-[rgb(var(--dark-bg-secondary))]
-              border-2 border-forest-200 dark:border-forest-800/30
+              bg-gradient-to-br from-nurture-50 to-white dark:from-nurture-900/20 dark:to-[rgb(var(--dark-bg-secondary))]
+              border-2 border-nurture-200 dark:border-nurture-800/30
               shadow-xl hover:shadow-2xl
               transition-all duration-300">
-            <div className="text-5xl font-bold font-mono text-forest-600 dark:text-[rgb(var(--dark-accent-forest))] mb-3">
+            <div className="text-5xl font-bold font-mono text-nurture-600 dark:text-[rgb(var(--dark-accent-nurture))] mb-3">
               36
             </div>
             <div className="text-sm font-semibold text-gray-700 dark:text-[rgb(var(--dark-text-secondary))]">
               {t('partners.stats.foundation')}
             </div>
             {/* Decorative accent */}
-            <div className="absolute top-4 right-4 w-3 h-3 bg-forest-500 rounded-full shadow-lg" />
+            <div className="absolute top-4 right-4 w-3 h-3 bg-nurture-500 rounded-full shadow-lg" />
           </motion.div>
 
           <motion.div
             whileHover={{ y: -4 }}
             className="relative group text-center p-8 rounded-2xl
-              bg-gradient-to-br from-golden-50 to-white dark:from-golden-900/20 dark:to-[rgb(var(--dark-bg-secondary))]
-              border-2 border-golden-200 dark:border-golden-800/30
+              bg-gradient-to-br from-radiance-50 to-white dark:from-radiance-900/20 dark:to-[rgb(var(--dark-bg-secondary))]
+              border-2 border-radiance-200 dark:border-radiance-800/30
               shadow-xl hover:shadow-2xl
               transition-all duration-300">
-            <div className="text-5xl font-bold font-mono text-golden-600 dark:text-[rgb(var(--dark-accent-golden))] mb-3">
+            <div className="text-5xl font-bold font-mono text-radiance-600 dark:text-[rgb(var(--dark-accent-radiance))] mb-3">
               17
             </div>
             <div className="text-sm font-semibold text-gray-700 dark:text-[rgb(var(--dark-text-secondary))]">
               {t('partners.stats.corporate')}
             </div>
             {/* Decorative accent */}
-            <div className="absolute top-4 right-4 w-3 h-3 bg-golden-500 rounded-full shadow-lg" />
+            <div className="absolute top-4 right-4 w-3 h-3 bg-radiance-500 rounded-full shadow-lg" />
           </motion.div>
         </motion.div>
       </div>

@@ -27,7 +27,7 @@ export default function LanguageSwitcher() {
         className="flex items-center gap-2 px-3 py-2 rounded-lg
                    bg-sand-200 dark:bg-[rgb(var(--dark-bg-tertiary))]
                    hover:bg-sand-300 dark:hover:bg-[rgb(var(--dark-bg-hover))]
-                   text-indigo-900 dark:text-[rgb(var(--dark-text-primary))]
+                   text-slate-600 dark:text-[rgb(var(--dark-text-primary))]
                    transition-colors"
         aria-label="Change language"
       >
@@ -61,8 +61,8 @@ export default function LanguageSwitcher() {
                   className={`w-full text-left px-4 py-2 text-sm transition-colors
                              hover:bg-sand-100 dark:hover:bg-[rgb(var(--dark-bg-hover))]
                              ${i18n.language === lang.code
-                               ? 'text-saffron-500 dark:text-[rgb(var(--dark-accent-saffron))] font-semibold'
-                               : 'text-indigo-900 dark:text-[rgb(var(--dark-text-primary))]'
+                               ? 'text-hope-500 dark:text-[rgb(var(--dark-accent-hope))] font-semibold'
+                               : 'text-slate-600 dark:text-[rgb(var(--dark-text-primary))]'
                              }`}
                 >
                   {lang.nativeName}

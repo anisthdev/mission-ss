@@ -18,9 +18,9 @@ export default function ThemeToggle() {
       className="relative p-2.5 rounded-full
                  bg-sand-200 dark:bg-[rgb(var(--dark-bg-tertiary))]
                  hover:bg-sand-300 dark:hover:bg-[rgb(var(--dark-bg-hover))]
-                 text-saffron-500 dark:text-[rgb(var(--dark-accent-golden))]
+                 text-hope-500 dark:text-[rgb(var(--dark-accent-radiance))]
                  transition-colors duration-200
-                 focus:outline-none focus:ring-2 focus:ring-saffron-400/50"
+                 focus:outline-none focus:ring-2 focus:ring-hope-400/50"
       whileTap={{ scale: 0.92 }}
       whileHover={{ scale: 1.05 }}
       aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}

@@ -55,10 +55,10 @@ export default function ImpactStats() {
             viewport={{ once: true }}
             className="flex flex-col justify-center"
           >
-            <span className="inline-block px-4 py-2 rounded-full bg-saffron-100 dark:bg-saffron-900/30 text-saffron-600 dark:text-[rgb(var(--dark-accent-saffron))] text-sm font-semibold mb-4 w-fit">
+            <span className="inline-block px-4 py-2 rounded-full bg-hope-100 dark:bg-hope-900/30 text-hope-600 dark:text-[rgb(var(--dark-accent-hope))] text-sm font-semibold mb-4 w-fit">
               {t('impact.badge')}
             </span>
-            <h2 className="text-4xl md:text-5xl font-heading font-bold text-indigo-900 dark:text-[rgb(var(--dark-text-primary))] mb-6">
+            <h2 className="text-4xl md:text-5xl font-heading font-bold text-slate-600 dark:text-[rgb(var(--dark-text-primary))] mb-6">
               {t('impact.heading')}
             </h2>
             <p className="text-lg text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
@@ -68,7 +68,7 @@ export default function ImpactStats() {
               {t('impact.description2')}
             </p>
             <div>
-              <button className="px-6 py-3 bg-saffron-500 hover:bg-saffron-600 text-white font-semibold rounded-lg transition-all duration-300 hover:shadow-lg">
+              <button className="px-6 py-3 bg-hope-500 hover:bg-hope-600 text-white font-semibold rounded-lg transition-all duration-300 hover:shadow-lg">
                 {t('impact.cta')}
               </button>
             </div>
@@ -128,7 +128,7 @@ export default function ImpactStats() {
                   </div>
 
                   {/* Hover Effect */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-saffron-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-hope-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </motion.div>
               ))}
             </div>

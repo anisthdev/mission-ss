@@ -10,7 +10,7 @@ export default function CTASection() {
   const { t } = useTranslation();
 
   return (
-    <section className="py-24 relative overflow-hidden bg-gradient-to-br from-saffron-500 via-saffron-600 to-terracotta-500 dark:from-[rgb(var(--dark-accent-saffron))] dark:via-saffron-600 dark:to-terracotta-500 text-white">
+    <section className="py-24 relative overflow-hidden bg-gradient-to-br from-hope-500 via-hope-600 to-hope-500 dark:from-[rgb(var(--dark-accent-hope))] dark:via-hope-600 dark:to-hope-500 text-white">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0" style={{
@@ -84,7 +84,7 @@ export default function CTASection() {
               variant="primary"
               size="lg"
               onClick={() => navigate('/get-involved')}
-              className="bg-white hover:bg-sand-100 text-saffron-600 dark:text-indigo-900 font-bold shadow-xl group"
+              className="bg-white hover:bg-sand-100 text-hope-600 dark:text-slate-600 font-bold shadow-xl group"
             >
               {t('cta.cta')}
               <ArrowRight className="inline-block ml-2 group-hover:translate-x-1 transition-transform" size={20} />
