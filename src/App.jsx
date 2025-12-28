@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ThemeProvider } from './context/ThemeContext';
 import Header from './components/common/Header';
 import Footer from './components/common/Footer';
+import DemoCornerRibbon from './components/common/DemoCornerRibbon';
 import Home from './pages/Home';
 
 // Placeholder pages - will be created later
@@ -20,6 +21,7 @@ function App() {
     <ThemeProvider>
       <Router>
         <div className="min-h-screen flex flex-col bg-white dark:bg-[rgb(var(--dark-bg-primary))] transition-colors">
+          <DemoCornerRibbon />
           <Header />
           <main className="flex-grow">
             <Routes>
