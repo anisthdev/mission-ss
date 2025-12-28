@@ -1,49 +1,74 @@
-import { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, ChevronDown, Globe } from 'lucide-react';
-import { useTranslation } from 'react-i18next';
-import ThemeToggle from './ThemeToggle';
-import LanguageSwitcher from './LanguageSwitcher';
+import { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { motion, AnimatePresence } from "framer-motion";
+import { Menu, X, ChevronDown, Globe } from "lucide-react";
+import { useTranslation } from "react-i18next";
+import ThemeToggle from "./ThemeToggle";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function Header() {
   const { t } = useTranslation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
+  const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const navigation = [
-    { nameKey: 'nav.home', path: '/' },
+    { nameKey: "nav.home", path: "/" },
     {
-      nameKey: 'nav.about',
-      path: '/about',
+      nameKey: "nav.about",
+      path: "/about",
       dropdown: [
-        { nameKey: 'nav.aboutDropdown.ourStory', path: '/about' },
-        { nameKey: 'nav.aboutDropdown.visionMission', path: '/about#vision' },
-        { nameKey: 'nav.aboutDropdown.teamGovernance', path: '/team' },
-      ]
+        { nameKey: "nav.aboutDropdown.ourStory", path: "/about" },
+        { nameKey: "nav.aboutDropdown.visionMission", path: "/about#vision" },
+        { nameKey: "nav.aboutDropdown.teamGovernance", path: "/team" },
+      ],
     },
     {
-      nameKey: 'nav.programs',
-      path: '/programs',
+      nameKey: "nav.programs",
+      path: "/programs",
       dropdown: [
-        { nameKey: 'nav.programsDropdown.allPrograms', path: '/programs' },
-        { nameKey: 'nav.programsDropdown.livelihoods', path: '/programs/livelihoods' },
-        { nameKey: 'nav.programsDropdown.farmerCollectives', path: '/programs/farmer-collectives' },
-        { nameKey: 'nav.programsDropdown.womenEmpowerment', path: '/programs/women-empowerment' },
-        { nameKey: 'nav.programsDropdown.artisanRevival', path: '/programs/artisan-revival' },
-        { nameKey: 'nav.programsDropdown.skillDevelopment', path: '/programs/skill-development' },
-      ]
+        { nameKey: "nav.programsDropdown.allPrograms", path: "/programs" },
+        {
+          nameKey: "nav.programsDropdown.livelihoods",
+          path: "/programs/livelihoods",
+        },
+        {
+          nameKey: "nav.programsDropdown.farmerCollectives",
+          path: "/programs/farmer-collectives",
+        },
+        {
+          nameKey: "nav.programsDropdown.womenEmpowerment",
+          path: "/programs/women-empowerment",
+        },
+        {
+          nameKey: "nav.programsDropdown.artisanRevival",
+          path: "/programs/artisan-revival",
+        },
+        {
+          nameKey: "nav.programsDropdown.skillDevelopment",
+          path: "/programs/skill-development",
+        },
+      ],
     },
-    { nameKey: 'nav.impact', path: '/impact' },
-    { nameKey: 'nav.whereWeWork', path: '/where-we-work' },
-    { nameKey: 'nav.partners', path: '/partners' },
-    { nameKey: 'nav.transparency', path: '/transparency' },
-    { nameKey: 'nav.getInvolved', path: '/get-involved' },
+    { nameKey: "nav.impact", path: "/impact" },
+    { nameKey: "nav.whereWeWork", path: "/where-we-work" },
+    { nameKey: "nav.partners", path: "/partners" },
+    { nameKey: "nav.transparency", path: "/transparency" },
+    { nameKey: "nav.getInvolved", path: "/get-involved" },
   ];
 
   const isActive = (path) => {
-    if (path === '/') return location.pathname === '/';
+    if (path === "/") return location.pathname === "/";
     return location.pathname.startsWith(path);
   };
 
@@ -52,7 +77,13 @@ export default function Header() {
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-white/90 dark:bg-[rgb(var(--dark-bg-secondary))]/90 backdrop-blur-md border-b border-sand-200 dark:border-[rgb(var(--dark-border))] transition-colors">
+    <header
+      className={`${isScrolled ? "sticky" : "absolute"} top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        isScrolled
+          ? "bg-white/90 dark:bg-[rgb(var(--dark-bg-secondary))]/90 backdrop-blur-md border-b border-sand-200 dark:border-[rgb(var(--dark-border))] shadow-sm"
+          : "bg-transparent border-b border-transparent"
+      }`}
+    >
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20 lg:h-24">
           {/* Logo */}
@@ -60,7 +91,11 @@ export default function Header() {
             <img
               src="/images/hope_logo.png"
               alt="Hope Foundation Logo"
-              className="h-20 lg:h-24 w-auto rounded-full object-cover opacity-90"
+              className={`h-20 lg:h-24 w-auto rounded-full object-cover transition-all ${
+                isScrolled
+                  ? "opacity-90 mix-blend-multiply dark:mix-blend-normal dark:brightness-110"
+                  : "opacity-100 drop-shadow-lg"
+              }`}
             />
           </Link>
 
@@ -75,14 +110,23 @@ export default function Header() {
                     className="relative"
                   >
                     <button
-                      className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors flex items-center gap-1
-                                 ${isActive(item.path)
-                                   ? 'text-hope-500 dark:text-[rgb(var(--dark-accent-hope))]'
-                                   : 'text-slate-600 dark:text-[rgb(var(--dark-text-primary))] hover:text-hope-500 dark:hover:text-[rgb(var(--dark-accent-saffron)))]'
-                                 }`}
+                      className={`px-3 py-2 rounded-lg text-sm font-medium transition-all flex items-center gap-1 ${
+                        !isScrolled
+                          ? "text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] hover:text-white/90"
+                          : ""
+                      } ${
+                        isScrolled && isActive(item.path)
+                          ? "text-hope-500 dark:text-[rgb(var(--dark-accent-hope))]"
+                          : isScrolled
+                            ? "text-slate-600 dark:text-[rgb(var(--dark-text-primary))] hover:text-hope-500 dark:hover:text-[rgb(var(--dark-accent-saffron)))]"
+                            : ""
+                      }`}
                     >
                       {t(item.nameKey)}
-                      <ChevronDown size={16} className={`transition-transform ${activeDropdown === item.nameKey ? 'rotate-180' : ''}`} />
+                      <ChevronDown
+                        size={16}
+                        className={`transition-transform ${activeDropdown === item.nameKey ? "rotate-180" : ""}`}
+                      />
                     </button>
 
                     <AnimatePresence>
@@ -115,11 +159,17 @@ export default function Header() {
                 ) : (
                   <Link
                     to={item.path}
-                    className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors
-                               ${isActive(item.path)
-                                 ? 'text-hope-500 dark:text-[rgb(var(--dark-accent-hope))]'
-                                 : 'text-slate-600 dark:text-[rgb(var(--dark-text-primary))] hover:text-hope-500 dark:hover:text-[rgb(var(--dark-accent-saffron)))]'
-                               }`}
+                    className={`px-3 py-2 rounded-lg text-sm font-medium transition-all ${
+                      !isScrolled
+                        ? "text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] hover:text-white/90"
+                        : ""
+                    } ${
+                      isScrolled && isActive(item.path)
+                        ? "text-hope-500 dark:text-[rgb(var(--dark-accent-hope))]"
+                        : isScrolled
+                          ? "text-slate-600 dark:text-[rgb(var(--dark-text-primary))] hover:text-hope-500 dark:hover:text-[rgb(var(--dark-accent-saffron)))]"
+                          : ""
+                    }`}
                   >
                     {t(item.nameKey)}
                   </Link>
@@ -136,9 +186,11 @@ export default function Header() {
             {/* Mobile menu button */}
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="lg:hidden p-2 rounded-lg text-slate-600 dark:text-[rgb(var(--dark-text-primary))]
-                         hover:bg-sand-100 dark:hover:bg-[rgb(var(--dark-bg-hover))]
-                         transition-colors"
+              className={`lg:hidden p-2 rounded-lg transition-all ${
+                !isScrolled
+                  ? "text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] hover:bg-white/10"
+                  : "text-slate-600 dark:text-[rgb(var(--dark-text-primary))] hover:bg-sand-100 dark:hover:bg-[rgb(var(--dark-bg-hover))]"
+              }`}
               aria-label="Toggle menu"
             >
               {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -151,7 +203,7 @@ export default function Header() {
           {isMobileMenuOpen && (
             <motion.div
               initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: 'auto' }}
+              animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.2 }}
               className="lg:hidden overflow-hidden border-t border-sand-200 dark:border-[rgb(var(--dark-border))]"
@@ -169,13 +221,16 @@ export default function Header() {
                                      transition-colors"
                         >
                           {t(item.nameKey)}
-                          <ChevronDown size={18} className={`transition-transform ${activeDropdown === item.nameKey ? 'rotate-180' : ''}`} />
+                          <ChevronDown
+                            size={18}
+                            className={`transition-transform ${activeDropdown === item.nameKey ? "rotate-180" : ""}`}
+                          />
                         </button>
                         <AnimatePresence>
                           {activeDropdown === item.nameKey && (
                             <motion.div
                               initial={{ opacity: 0, height: 0 }}
-                              animate={{ opacity: 1, height: 'auto' }}
+                              animate={{ opacity: 1, height: "auto" }}
                               exit={{ opacity: 0, height: 0 }}
                               className="pl-4 space-y-1"
                             >
@@ -201,9 +256,10 @@ export default function Header() {
                         to={item.path}
                         onClick={() => setIsMobileMenuOpen(false)}
                         className={`block px-3 py-2 rounded-lg text-base font-medium transition-colors
-                                   ${isActive(item.path)
-                                     ? 'text-hope-500 dark:text-[rgb(var(--dark-accent-hope))] bg-sand-100 dark:bg-[rgb(var(--dark-bg-hover))]'
-                                     : 'text-slate-600 dark:text-[rgb(var(--dark-text-primary))] hover:bg-sand-100 dark:hover:bg-[rgb(var(--dark-bg-hover))]'
+                                   ${
+                                     isActive(item.path)
+                                       ? "text-hope-500 dark:text-[rgb(var(--dark-accent-hope))] bg-sand-100 dark:bg-[rgb(var(--dark-bg-hover))]"
+                                       : "text-slate-600 dark:text-[rgb(var(--dark-text-primary))] hover:bg-sand-100 dark:hover:bg-[rgb(var(--dark-bg-hover))]"
                                    }`}
                       >
                         {t(item.nameKey)}

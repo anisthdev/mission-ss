@@ -29,7 +29,7 @@ export default function Footer() {
               <img
                 src="/images/hope_logo.png"
                 alt="Hope Foundation Logo"
-                className="h-24 w-auto rounded-full object-cover"
+                className="h-24 w-auto rounded-full object-cover mix-blend-multiply dark:mix-blend-normal dark:brightness-110"
               />
             </div>
             <p className="text-sm text-gray-600 dark:text-[rgb(var(--dark-text-secondary))] mb-4">
