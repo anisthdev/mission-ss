@@ -46,20 +46,20 @@ export default function Hero() {
 
   const slide = heroSlides[currentSlide];
 
-  // Slide animation variants
+  // Slide animation variants - crossfade with subtle zoom
   const slideVariants = {
-    enter: (direction) => ({
-      x: direction > 0 ? '100%' : '-100%',
+    enter: {
       opacity: 0,
-    }),
-    center: {
-      x: 0,
-      opacity: 1,
+      scale: 1.1,
     },
-    exit: (direction) => ({
-      x: direction > 0 ? '-100%' : '100%',
+    center: {
+      opacity: 1,
+      scale: 1,
+    },
+    exit: {
       opacity: 0,
-    }),
+      scale: 0.95,
+    },
   };
 
   return (
@@ -74,10 +74,11 @@ export default function Hero() {
           animate="center"
           exit="exit"
           transition={{
-            x: { type: "spring", stiffness: 200, damping: 35 },
-            opacity: { duration: 0.5 }
+            duration: 1.2,
+            ease: [0.22, 1, 0.36, 1]
           }}
           className="absolute inset-0"
+          style={{ willChange: 'opacity, transform' }}
         >
           <img
             src={slide.image}
@@ -90,7 +91,7 @@ export default function Hero() {
       </AnimatePresence>
 
       {/* Content Container */}
-      <div className="relative h-full z-10 flex items-center pb-32 md:pb-24">
+      <div className="relative h-full z-10 flex items-center pt-32 pb-32 md:pb-24 lg:pt-0">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl">
             <AnimatePresence mode="wait" custom={direction}>
@@ -133,27 +134,6 @@ export default function Hero() {
                 >
                   {slide.subtitle}
                 </motion.p>
-
-                {/* Impact Stats - shown on all slides */}
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.6 }}
-                  className="flex flex-wrap gap-4 md:gap-8 pt-4"
-                >
-                  <div className="backdrop-blur-md bg-white/10 dark:bg-white/5 rounded-xl px-4 py-3 md:px-6 md:py-4 border border-white/20 shadow-2xl">
-                    <div className="text-3xl md:text-4xl font-bold font-mono text-white">22+</div>
-                    <div className="text-xs md:text-sm text-gray-200">Years of Impact</div>
-                  </div>
-                  <div className="backdrop-blur-md bg-white/10 dark:bg-white/5 rounded-xl px-4 py-3 md:px-6 md:py-4 border border-white/20 shadow-2xl">
-                    <div className="text-3xl md:text-4xl font-bold font-mono text-white">165K+</div>
-                    <div className="text-xs md:text-sm text-gray-200">Families Empowered</div>
-                  </div>
-                  <div className="backdrop-blur-md bg-white/10 dark:bg-white/5 rounded-xl px-4 py-3 md:px-6 md:py-4 border border-white/20 shadow-2xl">
-                    <div className="text-3xl md:text-4xl font-bold font-mono text-white">12</div>
-                    <div className="text-xs md:text-sm text-gray-200">Zones Reached</div>
-                  </div>
-                </motion.div>
 
                 {/* CTAs - only on first slide */}
                 {slide.showCTA && (
